@@ -67,33 +67,38 @@
 
         <div class="hidden lg:flex lg:gap-x-12">
           <a
-            href="#"
-            class="text-lg font-semibold leading-6 text-white"
-            >About MBAR</a
-          >
+              href="#"
+              hx-get="about.html"
+              hx-trigger="click"
+              hx-target="#main-content"
+              class="text-lg font-semibold leading-6 text-white"
+              >About MBAR</a>
           <a
-            href="#"
-            class="text-lg font-semibold leading-6 text-white"
-            >Resources</a
-          >
+              href="#"
+              hx-get="resources.html"
+              hx-trigger="click"
+              hx-target="#main-content"
+              class="text-lg font-semibold leading-6 text-white"
+              >Resources</a>
           <a
-            href="#"
-            class="text-lg font-semibold leading-6 text-white"
-            >Publications</a
-          >
+              href="#"
+              hx-get="publications.html"
+              hx-trigger="click"
+              hx-target="#main-content"
+              class="text-lg font-semibold leading-6 text-white"
+              >Publications</a>
           <a
-            href="#"
-            class="text-lg font-semibold leading-6 text-white"
-            >About Us</a
-          >
-        </div>
-        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a
-            href="maito:pstew@uab.edu"
-            class="text-sm font-semibold leading-6 text-white"
-            >Contact Us <span aria-hidden="true">&rarr;</span></a
-          >
-        </div>
+              href="#"
+              hx-get="about_us.html"
+              hx-trigger="click"
+              hx-target="#main-content"
+              class="text-lg font-semibold leading-6 text-white"
+              >About Us</a>
+      </div>
+      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+        <a href="mailto:pstew@uab.edu" class="text-sm font-semibold leading-6 text-white" aria-label="Email us for more information">Contact Us <span aria-hidden="true">&rarr;</span></a>
+    </div>
+      
       </nav>
       <div
         id="mobile-menu"
@@ -135,35 +140,41 @@
           </div>
           <div class="mt-6 flow-root">
             <div class="-my-6 divide-y divide-gray-500/25">
-              <div class="space-y-2 py-6">
-                <a
-                  href="#"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-white hover:bg-gray-800"
-                  >About MBAR</a
-                >
-                <a
-                  href="#"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-white hover:bg-gray-800"
-                  >Resources</a
-                >
-                <a
-                  href="#"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-white hover:bg-gray-800"
-                  >Publications</a
-                >
-                <a
-                  href="#"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-white hover:bg-gray-800"
-                  >About Us</a
-                >
+                <div class="space-y-2 py-6">
+                    <a
+                        href="#"
+                        hx-get="about.html"
+                        hx-trigger="click"
+                        hx-target="#main-content"
+                        class="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-white hover:bg-gray-800"
+                        >About MBAR</a>
+                    <a
+                        href="#"
+                        hx-get="resources.html"
+                        hx-trigger="click"
+                        hx-target="#main-content"
+                        class="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-white hover:bg-gray-800"
+                        >Resources</a>
+                    <a
+                        href="#"
+                        hx-get="publications.html"
+                        hx-trigger="click"
+                        hx-target="#main-content"
+                        class="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-white hover:bg-gray-800"
+                        >Publications</a>
+                    <a
+                        href="#"
+                        hx-get="about_us.html"
+                        hx-trigger="click"
+                        hx-target="#main-content"
+                        class="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-white hover:bg-gray-800"
+                        >About Us</a>
+                </div>
+                <div class="py-6">
+                  <a href="mailto:pstew@uab.edu" class="-mx-3 block rounded-lg px-3 py-2.5 text-lg font-semibold leading-7 text-white hover:bg-gray-800" aria-label="Email us for more information">Contact Us</a>
               </div>
-              <div class="py-6">
-                <a
-                  href="mailto:pstew@uab.edu"
-                  class="-mx-3 block rounded-lg px-3 py-2.5 text-lg font-semibold leading-7 text-white hover:bg-gray-800"
-                  >Contact Us</a
-                >
-              </div>
+        </div>
+        
             </div>
           </div>
         </div>
@@ -287,7 +298,7 @@
       </div>
 
       <!-- main -->
-      <div class="flex-grow">
+      <div class="flex-grow" id="main-content">
         <div class="bg-white px-6 pt-16 pb-32 lg:px-8">
           <div
             class="mx-auto max-w-3xl text-base leading-7 text-gray-700"
