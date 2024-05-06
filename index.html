@@ -285,28 +285,38 @@
       document.getElementById('hamburger').addEventListener('click', function() {
           document.getElementById('mobile-menu').classList.toggle('hidden');
       });
-  
+    
       document.getElementById('close-button').addEventListener('click', function() {
           document.getElementById('mobile-menu').classList.add('hidden');
       });
-      document.addEventListener('DOMContentLoaded', () => {
-    const dropdownButtons = document.querySelectorAll('button[aria-controls]');
-
-    dropdownButtons.forEach(button => {
-        const subMenuId = button.getAttribute('aria-controls');
-        const subMenu = document.getElementById(subMenuId);
-
-        // Set initial state to closed
-        button.setAttribute('aria-expanded', 'false');
-        subMenu.style.display = 'none';
-
-        button.addEventListener('click', () => {
-            const isExpanded = button.getAttribute('aria-expanded') === 'true';
-            button.setAttribute('aria-expanded', !isExpanded);
-            subMenu.style.display = isExpanded ? 'none' : 'block';
+    
+      // Add event listeners to all links within the mobile menu to close the menu when clicked
+      const menuLinks = document.querySelectorAll('#mobile-menu a');
+      menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          document.getElementById('mobile-menu').classList.add('hidden');
         });
-    });
-});
-  </script>
+      });
+    
+      document.addEventListener('DOMContentLoaded', () => {
+          const dropdownButtons = document.querySelectorAll('button[aria-controls]');
+    
+          dropdownButtons.forEach(button => {
+              const subMenuId = button.getAttribute('aria-controls');
+              const subMenu = document.getElementById(subMenuId);
+    
+              // Set initial state to closed
+              button.setAttribute('aria-expanded', 'false');
+              subMenu.style.display = 'none';
+    
+              button.addEventListener('click', () => {
+                  const isExpanded = button.getAttribute('aria-expanded') === 'true';
+                  button.setAttribute('aria-expanded', !isExpanded);
+                  subMenu.style.display = isExpanded ? 'none' : 'block';
+              });
+          });
+      });
+    </script>
+    
   </body>
 </html>
