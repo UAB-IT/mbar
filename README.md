@@ -18,7 +18,7 @@ This HTML file references various external resources, including stylesheets, scr
 - `logo-white-out.svg` - Logo used in the header and mobile menu.
 - `ban7.jpg` - Background image for a section of the webpage.
 - `pickleball.jpg` - Image utilized in a decorative card element.
-- `mrbf-w2.png` - Image possibly representing another logo or decorative element, used in the footer.
+- `mrbf-w2.png` - Image of McKnight Logo, used in the footer.
 
 ### Dynamically Loaded Content (via htmx)
 
