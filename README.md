@@ -12,15 +12,15 @@ The **index.html** file references various external resources, including stylesh
 
 - **htmx**: [https://unpkg.com/htmx.org@1.9.10](https://unpkg.com/htmx.org@1.9.10) - A library for adding advanced interactivity to HTML documents using AJAX, CSS Transitions, WebSockets, and more.
 
-### Images
+### Images Folder
 
 - `favicon.ico` - The favicon for the website.
-- `logo-white-out.svg` - MBAR Logo used in the header and mobile menu.
-- `ban7.jpg` - Banner image for the top section of the homepage.
+- `mbar-logo.svg` - MBAR Logo used in the header and mobile menu.
+- `banner.jpg` - Banner image for the top section of the homepage.
 - `pickleball.jpg` - Image utilized in a decorative card element.
-- `mrbf-w2.png` - Image of McKnight Logo, used in the footer.
+- `mcknight-logo.png` - Image of McKnight Logo, used in the footer.
 
-### Dynamically Loaded Content (via htmx)
+### Pages Foler - Dynamically Loaded Content (via htmx)
 
 - `our_study.html` - Loaded into the main content area when the "About MBAR" link is clicked.
 - `resources.html` - Loaded into the main content area when the "Resources" link is clicked.
