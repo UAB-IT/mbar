@@ -33,6 +33,6 @@ The **index.html** file references various external resources, including stylesh
 
 These files and scripts are crucial for the complete functionality and visual presentation of the webpage as specified in the provided HTML.
 
-[https://uab-it.github.io/mbar/](https://uab-it.github.io/MBAR)
+[https://uab-it.github.io/mbar/](https://uab-it.github.io/mbar)
 
 ---
