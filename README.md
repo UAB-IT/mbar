@@ -2,7 +2,7 @@
 
 ## External References in HTML File
 
-This HTML file references various external resources, including stylesheets, scripts, images, and HTML files loaded dynamically for enhanced functionality and style. Below is a detailed list of these references:
+This 'index.html' file references various external resources, including stylesheets, scripts, images, and HTML files loaded dynamically for enhanced functionality and style. Below is a detailed list of these references:
 
 ### Stylesheets
 
