@@ -29,7 +29,7 @@ The **index.html** file references various external resources, including stylesh
 
 ### JavaScript Functionality
 
-- The HTML includes JavaScript code responsible for toggling the visibility of mobile navigation menus and managing dropdown interactions.
+- The HTML includes JavaScript code responsible for toggling the visibility of mobile navigation menus.
 
 These files and scripts are crucial for the complete functionality and visual presentation of the webpage as specified in the provided HTML.
 
