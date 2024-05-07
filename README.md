@@ -15,8 +15,8 @@ This HTML file references various external resources, including stylesheets, scr
 ### Images
 
 - `favicon.ico` - The favicon for the website.
-- `logo-white-out.svg` - Logo used in the header and mobile menu.
-- `ban7.jpg` - Background image for a section of the webpage.
+- `logo-white-out.svg` - MBAR Logo used in the header and mobile menu.
+- `ban7.jpg` - Header image for the top section of the homepage.
 - `pickleball.jpg` - Image utilized in a decorative card element.
 - `mrbf-w2.png` - Image of McKnight Logo, used in the footer.
 
