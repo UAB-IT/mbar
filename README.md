@@ -2,7 +2,7 @@
 
 ## External References in HTML File
 
-This HTML file references various external resources, including stylesheets, scripts, images, and HTML files loaded dynamically for enhanced functionality and style. Below is a detailed list of these references:
+The **index.html** file references various external resources, including stylesheets, scripts, images, and HTML files loaded dynamically for enhanced functionality and style. Below is a detailed list of these references:
 
 ### Stylesheets
 
@@ -12,15 +12,15 @@ This HTML file references various external resources, including stylesheets, scr
 
 - **htmx**: [https://unpkg.com/htmx.org@1.9.10](https://unpkg.com/htmx.org@1.9.10) - A library for adding advanced interactivity to HTML documents using AJAX, CSS Transitions, WebSockets, and more.
 
-### Images
+### Images Folder
 
 - `favicon.ico` - The favicon for the website.
-- `logo-white-out.svg` - Logo used in the header and mobile menu.
-- `ban7.jpg` - Background image for a section of the webpage.
+- `mbar-logo.svg` - MBAR Logo used in the header and mobile menu.
+- `banner.jpg` - Banner image for the top section of the homepage.
 - `pickleball.jpg` - Image utilized in a decorative card element.
-- `mrbf-w2.png` - Image possibly representing another logo or decorative element, used in the footer.
+- `mcknight-logo.png` - Image of McKnight Logo, used in the footer.
 
-### Dynamically Loaded Content (via htmx)
+### Pages Foler - Dynamically Loaded Content (via htmx)
 
 - `our_study.html` - Loaded into the main content area when the "About MBAR" link is clicked.
 - `resources.html` - Loaded into the main content area when the "Resources" link is clicked.
@@ -29,8 +29,10 @@ This HTML file references various external resources, including stylesheets, scr
 
 ### JavaScript Functionality
 
-- The HTML includes JavaScript code responsible for toggling the visibility of mobile navigation menus and managing dropdown interactions.
+- The HTML includes JavaScript code responsible for toggling the visibility of mobile navigation menus.
 
 These files and scripts are crucial for the complete functionality and visual presentation of the webpage as specified in the provided HTML.
+
+[https://uab-it.github.io/mbar/](https://uab-it.github.io/mbar)
 
 ---
