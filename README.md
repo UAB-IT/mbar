@@ -16,7 +16,7 @@ The **index.html** file references various external resources, including stylesh
 
 - `favicon.ico` - The favicon for the website.
 - `mbar-logo.svg` - MBAR Logo used in the header and mobile menu.
-- `banner.jpg` - Banner image for the top section of the homepage.
+- `vintage.jpg` - Banner image for the top section of the homepage.
 - `pickleball.jpg` - Image utilized in a decorative card element.
 - `mcknight-logo.png` - Image of McKnight Logo, used in the footer.
 
