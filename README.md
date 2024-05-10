@@ -35,4 +35,9 @@ These files and scripts are crucial for the complete functionality and visual pr
 
 [https://uab-it.github.io/mbar/](https://uab-it.github.io/mbar)
 
+##Data Files are located here
+
+[https://uab.box.com/v/mbarstudywebsite](https://uab.box.com/v/mbarstudywebsite)
+[https://uab.box.com/v/MBAR-data-dictionary](https://uab.box.com/v/MBAR-data-dictionary)
+ 
 ---
