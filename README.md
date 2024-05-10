@@ -37,7 +37,7 @@ These files and scripts are crucial for the complete functionality and visual pr
 
 ##Data Files are located here
 
-[https://uab.box.com/v/mbarstudywebsite](https://uab.box.com/v/mbarstudywebsite)
-[https://uab.box.com/v/MBAR-data-dictionary](https://uab.box.com/v/MBAR-data-dictionary)
+- [https://uab.box.com/v/mbarstudywebsite](https://uab.box.com/v/mbarstudywebsite)
+- [https://uab.box.com/v/MBAR-data-dictionary](https://uab.box.com/v/MBAR-data-dictionary)
  
 ---
