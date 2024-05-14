@@ -1,5 +1,5 @@
 # Redirects from what the browser requests to what we serve
-/about          /
-/about-us       /
-/publications   /
-/resources      /
+about          /
+about-us       /
+publications   /
+resources      /
