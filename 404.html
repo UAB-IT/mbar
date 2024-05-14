@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
     <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS variables and classes -->
+    <style>
+      :root {
+        --mcknight: #0073e6;
+      }
+      .blue {
+        background-color: var(--mcknight);
+      }
+    </style>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const path = window.location.pathname;
