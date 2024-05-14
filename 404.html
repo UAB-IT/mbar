@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MBAR - Redirecting...</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
     <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        const path = window.location.pathname;
+        document.addEventListener("DOMContentLoaded", function() {
+            const path = window.location.pathname;
+            let targetUrl = 'index.html';
+            let htmxGet = '';
 
-        // Define redirects
-        const redirects = {
-          "/mbar/about": "pages/our_study.html",
-          "/mbar/resources": "pages/resources.html",
-          "/mbar/publications": "pages/publications.html",
-          "/mbar/about-us": "pages/about_us.html",
-          "/mbar/": "index.html"
-        };
+            if (path.includes("/about")) {
+                htmxGet = 'pages/our_study.html';
+            } else if (path.includes("/resources")) {
+                htmxGet = 'pages/resources.html';
+            } else if (path.includes("/publications")) {
+                htmxGet = 'pages/publications.html';
+            } else if (path.includes("/about-us")) {
+                htmxGet = 'pages/about_us.html';
+            }
 
-        // Find the target URL based on the current path
-        const targetUrl = redirects[path] || "index.html";
-
-        // Redirect to the target URL
-        window.location.replace(targetUrl);
-      });
+            if (htmxGet) {
+                htmx.ajax('GET', targetUrl, {target: 'body', swap: 'innerHTML'}).then(function() {
+                    htmx.ajax('GET', htmxGet, {target: '#main-content'});
+                });
+            } else {
+                window.location.replace(targetUrl);
+            }
+        });
     </script>
-  </head>
-  <body>
+</head>
+<body>
     <p>Redirecting...</p>
-  </body>
+</body>
 </html>
