@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MBAR - Redirecting...</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const path = window.location.pathname;
+
+        // Define redirects
+        const redirects = {
+          "/mbar/about": "pages/our_study.html",
+          "/mbar/resources": "pages/resources.html",
+          "/mbar/publications": "pages/publications.html",
+          "/mbar/about-us": "pages/about_us.html",
+          "/mbar/": "index.html"
+        };
+
+        // Find the target URL based on the current path
+        const targetUrl = redirects[path] || "index.html";
+
+        // Redirect to the target URL
+        window.location.replace(targetUrl);
+      });
+    </script>
+  </head>
+  <body>
+    <p>Redirecting...</p>
+  </body>
+</html>
