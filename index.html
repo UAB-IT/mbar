@@ -20,7 +20,7 @@
     <script>
       document.addEventListener("DOMContentLoaded", function() {
           const path = window.location.pathname;
-          if (path === "about") {
+          if (path === "/mbar/about") {
               htmx.ajax('GET', 'our_study.html', { target: '#main-content', pushURL: true });
           }
           // Add more routes as needed
