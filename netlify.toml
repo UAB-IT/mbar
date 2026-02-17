@@ -1,0 +1,34 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/about"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/resources"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/publications"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/about-us"
+  to = "/index.html"
+  status = 200
+
+# Redirect /mbar to root so the logo link works
+# (on GitHub Pages the site lives at /mbar/, on Netlify it's at /)
+[[redirects]]
+  from = "/mbar"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/mbar/*"
+  to = "/:splat"
+  status = 301
