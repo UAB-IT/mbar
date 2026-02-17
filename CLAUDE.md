@@ -33,6 +33,10 @@ This is a static site using **htmx** for client-side page loading and **Tailwind
 
 Open `index.html` directly in a browser or use any static file server (e.g., `python3 -m http.server`). There is no build, test, or lint configuration.
 
+## Git Identity
+
+When committing, use the repository owner's git identity rather than Claude Code's default. Configure via `.claude/settings.json`.
+
 ## Remote
 
 - Origin: https://github.com/UAB-IT/mbar.git
