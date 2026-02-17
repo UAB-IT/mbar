@@ -1,43 +1,36 @@
-## External References in HTML File
+# MBAR - McKnight Brain Aging Registry
 
-The **index.html** file references various external resources, including stylesheets, scripts, images, and HTML files loaded dynamically for enhanced functionality and style. Below is a detailed list of these references:
+The McKnight Brain Aging Registry (MBAR) is a website for researchers affiliated with the four McKnight Brain Research Foundation Institutes. Researchers who are part of those institutes can apply for access to the datasets.
 
-### Stylesheets
+- **GitHub Pages**: [https://uab-it.github.io/mbar/](https://uab-it.github.io/mbar/)
+- **Netlify**: [https://mbar.netlify.app/](https://mbar.netlify.app/)
 
-- **TailwindCSS**: [https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css](https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css) - A CSS framework that aids in styling the webpage efficiently.
-
-### Scripts
-
-- **htmx**: [https://unpkg.com/htmx.org@1.9.10](https://unpkg.com/htmx.org@1.9.10) - A library for adding advanced interactivity to HTML documents using AJAX, CSS Transitions, WebSockets, and more.
-
-### Images Folder
-
-- `favicon.ico` - The favicon for the website.
-- `mbar-logo.svg` - MBAR Logo used in the header and mobile menu.
-- `vintage.jpg` - Banner image for the top section of the homepage.
-- `pickleball.jpg` - Image utilized in a decorative card element.
-- `mcknight-logo.png` - Image of McKnight Logo, used in the footer.
-
-### Pages Foler - Dynamically Loaded Content (via htmx)
-
-- `our_study.html` - Loaded into the main content area when the "About MBAR" link is clicked.
-- `resources.html` - Loaded into the main content area when the "Resources" link is clicked.
-- `publications.html` - Loaded into the main content area when the "Publications" link is clicked.
-- `about_us.html` - Loaded into the main content area when the "About Us" link is clicked.
-
-### JavaScript Functionality
-
-- The HTML includes JavaScript code responsible for toggling the visibility of mobile navigation menus.
-
-These files and scripts are crucial for the complete functionality and visual presentation of the webpage as specified in the provided HTML.
-
-[https://uab-it.github.io/mbar/](https://uab-it.github.io/mbar)
-
-[https://mbar.netlify.app/](https://mbar.netlify.app/)
-
-### Data Files are located here
+### Data Files
 
 - [https://uab.box.com/v/mbarstudywebsite](https://uab.box.com/v/mbarstudywebsite)
 - [https://uab.box.com/v/MBAR-data-dictionary](https://uab.box.com/v/MBAR-data-dictionary)
- 
+
 ---
+
+## Architecture
+
+A static site using [htmx](https://htmx.org/) for client-side page loading and [Tailwind CSS](https://tailwindcss.com/) (CDN v2.2.19) for styling. No build step, bundler, or package manager.
+
+- `index.html` — Main entry point and shell (header, footer, nav, banner)
+- `pages/` — Content fragments loaded dynamically via htmx into the main content area
+- `404.html` — Catch-all for GitHub Pages SPA routing
+- `netlify.toml` — Rewrite rules for clean URL routing on Netlify
+- `images/` — Static image assets (logos, photos)
+
+## Development
+
+Open `index.html` in a browser or use any static file server:
+
+```
+python3 -m http.server
+```
+
+## Deployment
+
+- **GitHub Pages** deploys automatically from the `main` branch
+- **Netlify** uses `netlify.toml` for SPA rewrite rules; deploy via `netlify deploy --dir=. --prod`
