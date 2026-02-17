@@ -35,7 +35,7 @@ Open `index.html` directly in a browser or use any static file server (e.g., `py
 
 ## Git Identity
 
-When committing, use the repository owner's git identity rather than Claude Code's default. Configure via `.claude/settings.json`.
+When committing, use the repository owner's git identity rather than Claude Code's default. Configure via `.claude/settings.json`. Do not add a `Co-Authored-By` line to commit messages.
 
 ## Remote
 
